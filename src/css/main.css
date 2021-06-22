@@ -467,6 +467,11 @@ ul.breadcrumb li a:hover {
 .contacts__form__vbr-tg{
   position: absolute;
   font-size: 14px;
+  display:flex;
+}
+
+.contacts__form__vbr-tg label{
+  flex-shrink: 0;
 }
 
 .about-us__container{
@@ -934,6 +939,10 @@ ul.breadcrumb li a:hover {
 
 .carousel-navigation-btn:hover, .carousel-navigation-btn.active {
   background: #fff;
+}
+
+.contacts__social-img{
+  flex-shrink: 0;
 }
 
 .text_title{
@@ -1712,6 +1721,9 @@ footer-block__links{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  section{
+    padding-left:11rem;
+  }
 }
 @media screen and (max-width: 1680px) {
   .feedback-title {
@@ -1793,6 +1805,13 @@ footer-block__links{
   }
   .services__slider__slide:last-child .slide__btn{
     opacity: 1;
+  }
+  .contacts__feedback .block__inner{
+    padding: 3rem 1rem;
+  }
+  .contacts__form__inputs select{
+    font-size: 1rem;
+    padding: 1.4rem 0;
   }
 }
 
@@ -2241,6 +2260,9 @@ footer-block__links{
     width: 100%;
     margin-top: 2.1429rem;
     margin-bottom: 1.4286rem;
+  }
+  #buy-service{
+    padding: .4rem;
   }
 }
 
