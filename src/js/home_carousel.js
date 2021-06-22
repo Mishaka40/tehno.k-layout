@@ -41,7 +41,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
     function removeClasses() {
         carousel.querySelectorAll(".carousel-item").forEach((slide) => {
-            slide.classList.remove("previous", "active", "next");
+            slide.classList.remove("previous", "active", "next", "disp-none");
         });
         document.querySelectorAll(".carousel-navigation-btn").forEach((btn) => {
             btn.classList.remove("active");
@@ -52,6 +52,10 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
         carousel.querySelectorAll(".carousel-item")[activeItem].classList.add("active");
         carousel.querySelectorAll(".carousel-item")[previousItem].classList.add("previous");
         carousel.querySelectorAll(".carousel-item")[nextItem].classList.add("next");
+        setTimeout(function(){
+            carousel.querySelectorAll(".carousel-item")[previousItem].classList.add("disp-none");
+            carousel.querySelectorAll(".carousel-item")[nextItem].classList.add("disp-none");
+        }, 300);
         document.querySelectorAll(".carousel-navigation-btn")[activeItem].classList.add("active");
     }
 

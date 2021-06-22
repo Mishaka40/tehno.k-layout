@@ -7,6 +7,7 @@ const del = require('del')
 const concat = require('gulp-concat')
 const autoprefixer = require('gulp-autoprefixer')
 const sync = require('browser-sync').create()
+const uncss = require('gulp-uncss')
 
 function html(){
 	return src('src/**.html')
@@ -82,19 +83,6 @@ function img(){
 		.pipe(dest('dist/img'))
 }
 
-function bs_css(){
-	return src('src/bootstrap/bootstrap.css')
-		.pipe(csso())
-		.pipe(concat('bootstrap.css'))
-		.pipe(dest('dist/css/bootstrap'))
-}
-
-function bs_js(){
-	return src('src/bootstrap/bootstrap.js')
-		.pipe(concat('bootstrap.js'))
-		.pipe(dest('dist/js/bootstrap'))
-}
-
 function fonts(){
 	return src('src/fonts/**')
 		.pipe(dest('dist/fonts'))
@@ -119,6 +107,14 @@ function serve(){
 
 }
 
-exports.build = series(clear, css, html, html_serv, html_news, html_forms, js, img, fonts, bs_css, bs_js)
-exports.serve = series(clear, css, html, html_serv, html_news, html_forms, js, img, fonts, bs_css, bs_js, serve)
+function del_css (){
+	return src('src/css/main.css')
+        .pipe(uncss({
+            html: ['src/**.html', 'src/**/*.html']
+        }))
+        .pipe(dest('dist/out'));
+}
+
+exports.build = series(clear, css, html, html_serv, html_news, html_forms, js, img, fonts, del_css)
+exports.serve = series(clear, css, html, html_serv, html_news, html_forms, js, img, fonts, serve)
 exports.clear = clear
