@@ -1,0 +1,189 @@
+.left-menu {
+    width: 20rem;
+    height: 100%;
+    background: #1c0b05;
+    box-shadow: 0.3571rem 0 0.7143rem rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+}
+.left-menu__logo {
+    padding: 5rem 0;
+    text-align: center;
+}
+.logo__wrap *{
+    display:inline-block;
+    width:12.3rem;
+    height:2.1rem;
+}
+.left-menu__nav > ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.services_btn span:after {
+    content: "";
+    border: 0.45rem solid transparent;
+    border-left: 0.52rem solid #fff;
+    display: inline-block;
+    margin-left: 4px;
+}
+.left-menu__nav span {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+.left-menu__nav li{
+    margin: 0.4rem 0;
+}
+.left-menu__nav a,
+.left-menu__nav li > span {
+    width: 100%;
+    padding: 1.6rem 4rem;
+    display: inline-block;
+}
+.left-menu__nav a,
+.left-menu__nav>ul>li>span {
+    color: #fff;
+    font-size: 2rem;
+}
+.left-menu__nav a:hover{
+    color: #feba03;
+    text-decoration: underline;
+}
+.services_btn>span:hover{
+    color: #feba03;
+}
+.services_btn span:hover:after {
+    border-left: 0.52rem solid #feba03;
+}
+.menu-nav__active {
+    color: #feba03;
+}
+.menu_active_btn>span:hover {
+    color: #fff!important;
+    text-decoration: none;
+    cursor: default;
+}
+.menu_active_btn span:hover:after {
+    border-left: 0.52rem solid #fff !important;
+}
+.extend__close:hover,
+.menu_active_btn span {
+    color: #fff;
+}
+.menu_active_btn {
+    background: #feba03;
+    box-shadow: 0.3571rem 0 0.7143rem rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+.left-menu__contact {
+    position: absolute;
+    bottom: 7rem;
+    margin-left: 4rem;
+}
+.left-menu__contact__phone {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #feba03;
+}
+.left-menu__contact_request a {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #feba03;
+    text-decoration: underline;
+}
+.left-menu__contact_request a:hover {
+    color: #ffd86f;
+}
+.left-menu__contact__office {
+    margin-top: 3rem;
+}
+.left-menu__contact__office *{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+.left-menu__extend {
+    position: fixed;
+    min-height: 100%;
+    height: 100%;
+    width: 76.8rem;
+    background: #000;
+    transition: left .7s ease-in-out;
+    left: -76.8rem;
+    z-index: 4;
+}
+.extend__close {
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #6a6a6a;
+    cursor: pointer;
+}
+.extend {
+    left: 20rem;
+}
+.extend__serv {
+    display: flex;
+    padding: 0 5rem;
+    justify-content: space-between;
+}
+.serv-block__tittle {
+    margin-bottom: 1.2143rem;
+}
+.serv-block__tittle * {
+    font-size: 2rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+    color: #feba03;
+}
+.serv-block__list a {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.serv-block__list a:hover {
+    color: #feba03;
+}
+.serv-block__list li {
+    margin-bottom: 0.7143rem;
+}
+.serv__column {
+    max-width: 50%;
+    width: max-content;
+    display: flex;
+    flex-flow: column;
+}
+.menu__serv-block{
+    margin-bottom: 4vh;
+}
+.second-header {
+    position: absolute;
+    z-index: 2;
+    right: 11rem;
+    top: 5rem;
+}
+.second-header__links {
+    height: max-content;
+    display: flex;
+    width: 100%;
+}
+.links-link {
+    width: max-content;
+    margin-left: 3.1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.links-link a {
+    color: #000;
+}
+.links-link a:hover {
+    color: #a4a4a4;
+}
+.mobile_logo{
+    width: 12.4rem;
+    height: 2rem;
+}

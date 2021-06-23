@@ -1,0 +1,10 @@
+.credits__mobile-row {
+    flex-shrink: 0;
+    width: 100%;
+    left: 0;
+    position: relative;
+}
+.credits__nav-dots {
+    text-align: center;
+    padding: 1.4286rem 0;
+}

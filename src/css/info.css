@@ -1,0 +1,41 @@
+
+.info__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+.blocks__wrap {
+    display: flex;
+    padding: 1.5rem;
+    width: 50%;
+}
+.blocks__wrap__block {
+    background: #fff;
+    width: 100%;
+    display: flex;
+}
+.blocks__wrap__block .block__icon {
+    background: #1c0b05;
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+}
+.blocks__wrap__block .block__icon-contacts {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+.block__text {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block__text-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #e04a38;
+}
+.block__text-desc {
+    font-size: 1.6rem;
+}

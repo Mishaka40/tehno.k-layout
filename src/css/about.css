@@ -1,0 +1,18 @@
+#about {
+    background-image: url(../img/about/bg.svg);
+    background-color: #feba03;
+    background-size: cover;
+}
+#about .section_title {
+    margin-top: 5rem;
+}
+.about__text {
+    text-align: center;
+    max-width: 120rem;
+    font-size: 1.6rem;
+    margin: 3rem auto;
+}
+.about__btn {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}

@@ -41,7 +41,7 @@ function html_news(){
 		}))
 		.pipe(dest('dist/news'))
 }
-
+/*
 function html_forms(){
 	return src('src/forms/**.html')
 		.pipe(include({
@@ -51,7 +51,7 @@ function html_forms(){
 			collapseWhitespace: true
 		}))
 		.pipe(dest('dist/forms'))
-}
+}*/
 
 function css(){
 	return src('src/css/**.css')
@@ -104,6 +104,7 @@ function serve(){
 	watch('src/news/**.html', series(html)).on('change', sync.reload)
 	watch('src/services/**.html', series(html)).on('change', sync.reload)
 	watch('src/js/**.js', series(js)).on('change', sync.reload)
+	watch('src/home_sections/**.html', series(html)).on('change', sync.reload)
 
 }
 
@@ -115,6 +116,6 @@ function del_css (){
         .pipe(dest('dist/out'));
 }
 
-exports.build = series(clear, css, html, html_serv, html_news, html_forms, js, img, fonts, del_css)
-exports.serve = series(clear, css, html, html_serv, html_news, html_forms, js, img, fonts, serve)
+exports.build = series(clear, css, html, html_serv, html_news, js, img, fonts)
+exports.serve = series(clear, css, html, html_serv, html_news, js, img, fonts, serve)
 exports.clear = clear

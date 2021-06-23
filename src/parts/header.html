@@ -19,19 +19,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+<script src="/js/index.js"></script>
 <header>
   <div class="left-menu">
     <a href="/index.html">
       <div class="left-menu__logo">
-        <img src="/img/logo.svg">
+        <div class="logo__wrap">
+          <img src="/img/logo.svg">
+        </div>
       </div>
     </a>
-    <nav class="left-menu-nav">
+    <nav class="left-menu__nav">
       <ul>
-        <li><a href="/about.html"><div><span>О компании</span></div></a></li>
-        <li id="services_btn"><div><span>Услуги</span></div></li>
-        <li><a href="/news.html"><div><span>Новости</span></div></a></li>
-        <li><a href="/contacts.html"><div><span>Контакты</span></div></a></li>
+        <li><a href="/about.html"><span>О компании</span></a></li>
+        <li id="services_btn" class="services_btn"><span>Услуги</span></li>
+        <li><a href="/news.html"><span>Новости</span></a></li>
+        <li><a href="/contacts.html"><span>Контакты</span></a></li>
       </ul>
     </nav>
     <div class="left-menu__contact">
@@ -180,7 +183,9 @@
 <div class="header">
   <a href="/index.html">
     <div class="header__logo">
-      <img src="/img/logo.svg">
+      <div class="mobile_logo">
+        <img src="/img/logo.svg">
+      </div>
     </div>
   </a>
   <div class="header__menu-btn">
@@ -192,29 +197,27 @@
   </div>
 </div>
 <div class="second-header">
-  <div class="home-main__links">
-    <div class="links">
-      <div class="links-link">
-        <a href="/services/index.html#hr-consulting">
-              <span>
-                Кадровый консалтинг
-              </span>
-        </a>
-      </div>
-      <div class="links-link">
-        <a href="/services/index.html#taxes-consulting">
-              <span>
-                Налоговый консалтинг
-              </span>
-        </a>
-      </div>
-      <div class="links-link">
-        <a href="/services/index.html#auditing-services">
-              <span>
-                Аудиторские услуги
-              </span>
-        </a>
-      </div>
+  <div class="second-header__links">
+    <div class="links-link">
+      <a href="/services/index.html#hr-consulting">
+            <span>
+              Кадровый консалтинг
+            </span>
+      </a>
+    </div>
+    <div class="links-link">
+      <a href="/services/index.html#taxes-consulting">
+            <span>
+              Налоговый консалтинг
+            </span>
+      </a>
+    </div>
+    <div class="links-link">
+      <a href="/services/index.html#auditing-services">
+            <span>
+              Аудиторские услуги
+            </span>
+      </a>
     </div>
   </div>
 </div>
