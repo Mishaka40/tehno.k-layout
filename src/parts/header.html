@@ -39,7 +39,7 @@
     </nav>
     <div class="left-menu__contact">
       <div class="left-menu__contact__phone">
-        <span>+7 565 565-65-45</span>
+        <a href="tel:+75655656545"><span>+7 565 565-65-45</span></a>
       </div>
       <div class="left-menu__contact_request">
         <a class="various" href="#phone-form">Заказать звонок</a>
@@ -52,6 +52,9 @@
   </div>
 
   <div class="left-menu__extend">
+    <div class="menu__extend__arrow disp-none">
+      <svg width="8" height="22" viewBox="0 0 8 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.36227 21.8536C3.55753 22.0488 3.87411 22.0488 4.06937 21.8536L7.25135 18.6716C7.44661 18.4763 7.44661 18.1597 7.25135 17.9645C7.05608 17.7692 6.7395 17.7692 6.54424 17.9645L3.71582 20.7929L0.887384 17.9645C0.692122 17.7692 0.375539 17.7692 0.180277 17.9645C-0.014984 18.1597 -0.0149833 18.4763 0.180279 18.6716L3.36227 21.8536ZM3.21577 6.45599e-05L3.21582 21.5L4.21582 21.5L4.21577 6.20423e-05L3.21577 6.45599e-05Z" fill="#FEBA03"/></svg>        
+    </div>
     <div class="extend__close"><span>Закрыть</span></div>
     <div class="extend__serv v-middle">
       <div class="serv__column">
@@ -172,7 +175,7 @@
               <li><a href="">Реорганизация предприятия</a></li>
               <li><a href="">Ликвидация предприятия</a></li>
               <li><a href="">Ликвидация ФЛП</a></li>
-              <li><a href="">Представительство в суде</a></li>
+              <li id="last"><a href="">Представительство в суде</a></li>
             </ul>
           </div>
         </div>
@@ -189,11 +192,15 @@
     </div>
   </a>
   <div class="header__menu-btn">
-    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="20" height="14" class="menu_open" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect y="7" width="1" height="20" rx="0.5" transform="rotate(-90 0 7)" fill="#FEBA03"/>
       <rect y="13" width="1" height="20" rx="0.5" transform="rotate(-90 0 13)" fill="#FEBA03"/>
       <rect y="1" width="1" height="20" rx="0.5" transform="rotate(-90 0 1)" fill="#FEBA03"/>
     </svg>
+    <svg width="15" height="16" class="menu_close disp-none" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="14.2461" width="1" height="20" rx="0.5" transform="rotate(45 14.2461 0)" fill="#FEBA03"/>
+      <rect x="0.103516" y="0.999512" width="1" height="20" rx="0.5" transform="rotate(-45 0.103516 0.999512)" fill="#FEBA03"/>
+    </svg>      
   </div>
 </div>
 <div class="second-header">

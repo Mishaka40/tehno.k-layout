@@ -1,4 +1,4 @@
-<div id="buy-service" class="block__inner h-100">
+<div id="buy-service" class="block__inner">
     <div class="title yellow">
         <span>Давайте обсудим ваш проект</span>
     </div>
@@ -7,8 +7,8 @@
               Расскажем как сделать Ваш кредит выгоднее!
             </span>
     </div>
-    <div class="row m-0">
-        <div class="col-md-12 col-lg-5 pl-0 contacts__form__wrap">
+    <div class="row">
+        <div class="contacts__form__wrap">
             <div class="contacts__form__inner">
                 <form id="submit-project" method="post" action="" enctype="multipart/form-data">
                     <div class="contacts__form__inputs">
@@ -32,22 +32,18 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-12 col-lg-7 pr-0 contacts__form__wrap">
-            <div class="contacts__form__inner">
-                <div class="contacts__form__inputs">
-                    <textarea class="nice_input" name="project" form="submit-project" placeholder="Расскажите кратко о сути проекта" required ></textarea>
-                </div>
+        <div class="contacts__form__wrap__textarea">
+            <div class="contacts__form__inputs">
+                <textarea class="nice_input" name="project" form="submit-project" placeholder="Расскажите кратко о сути проекта" required ></textarea>
             </div>
         </div>
-        <div class="col-md-12 col-lg-5 pl-0 mt-1">
-            <button class="nice_btn btn_yellow" form="submit-project" type="submit">Отправить</button>
-        </div>
-        <div class="col-md-12 col-lg-7">
-            <div class="text disclaimer">
-                <span>
-                  Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.
-                </span>
-            </div>
+    </div>
+    <div class="contacts__brief__btn-text">
+        <button class="nice_btn btn_yellow" form="submit-project" type="submit">Отправить</button>
+        <div class="text disclaimer">
+            <span>
+              Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.
+            </span>
         </div>
     </div>
 </div>
