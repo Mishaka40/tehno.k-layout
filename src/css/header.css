@@ -114,7 +114,6 @@
     transition: left .7s ease-in-out;
     left: -76.8rem;
     z-index: 4;
-    overflow: scroll;
 }
 .extend__close {
     position: absolute;

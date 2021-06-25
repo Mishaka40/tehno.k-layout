@@ -15,7 +15,7 @@
     <div class="page-title">Новости компании</div>
 
     <div class="row news-slides" id="news">
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -35,12 +35,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -60,12 +60,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -85,12 +85,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -110,12 +110,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -135,12 +135,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -160,12 +160,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -185,12 +185,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -210,12 +210,12 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
       </div>
-      <div class="news-block">
+      <div class="news-block" data-news-link="/news/vremeniy-dostup.html">
         <div class="news__img">
           <img src="img/news/image.jpg">
         </div>
@@ -235,7 +235,7 @@
           </span>
         </div>
         <div class="read-more">
-          <a href="">
+          <a href="/news/vremeniy-dostup.html">
             Читать подробнее
           </a>
         </div>
@@ -260,6 +260,13 @@
   
   </div>
 </section>
+<script>
+  $( document ).ready(function() {
+    $('.news-block').on('click', function(){
+      document.location.href=$(this).data('news-link');
+    })
+  });
+</script>
 <!--<script>
   $( document ).ready(function() {
     $('#news').paginate({

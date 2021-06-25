@@ -143,13 +143,6 @@
         arrows: false,
         dots: true
       });
-      var about_text = $('.about__text span').html();
-      if (about_text.length >= 400) {
-        about_text = about_text.substring(0, 400);
-        var lastIndex = about_text.lastIndexOf(" ");
-        about_text = about_text.substring(0, lastIndex) + '...';
-        $('.about__text span').html(about_text);
-      }
     } else {
       $(".clients__vslider").slick({
         dots: true,
@@ -192,6 +185,9 @@
         slidesToScroll: 1
       });
     }
+    $('.slide-link').on('click', function(){
+      document.location.href=$(this).data('slide-link');
+    })
   });
 </script>
 <style>
