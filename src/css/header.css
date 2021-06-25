@@ -5,7 +5,7 @@
     box-shadow: 0.3571rem 0 0.7143rem rgba(0, 0, 0, 0.3);
     z-index: 5;
     position: fixed;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .left-menu__logo {
     padding: 5rem 0;
@@ -85,17 +85,17 @@
 .left-menu__contact__phone a{
     font-size: 1.6rem;
     line-height: 2.1rem;
-    color: #feba03;
+    color: #fff;
 }
 .left-menu__contact_request a {
     font-size: 1.6rem;
     line-height: 2.1rem;
-    color: #feba03;
+    color: #fff;
     text-decoration: underline;
 }
 .left-menu__contact_request a:hover,
 .left-menu__contact__phone a:hover {
-    color: #ffd86f;
+    color: #feba03;
 }
 .left-menu__contact__office {
     margin-top: 3rem;
@@ -139,7 +139,10 @@
     font-size: 2rem;
     line-height: 3.8rem;
     text-transform: uppercase;
-    color: #feba03;
+    color: #fff;
+}
+.serv-block__tittle a:hover{
+    color:#feba03
 }
 .serv-block__list a {
     color: #fff;

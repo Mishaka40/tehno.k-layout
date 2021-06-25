@@ -141,6 +141,20 @@ b,h2,h3,h4 {
     font-weight: 600;
     color: #000;
 }
+#home__feedback #name-error{
+    position: absolute;
+    bottom: -1.8rem;
+    left: .5rem;
+    color: #ff0000;
+    font-size: 1.4rem;
+}
+#home__feedback #phone-error{
+    position: absolute;
+    bottom: -1.8rem;
+    color: #ff0000;
+    font-size: 1.4rem;
+    margin-left: -6rem;
+}
 .nice_btn {
     text-align: center;
     border-radius: 0.02rem;
@@ -1023,16 +1037,24 @@ ul.breadcrumb {
 
 
 
-
+.alternating-rows .rows:first-of-type{
+    margin-top: 4rem;
+}
 .alternating-rows .rows {
     display: flex;
-    margin-top: 4.5rem;
+    margin-bottom: 5rem;
 }
 .rows:nth-child(even) {
     flex-direction: row-reverse;
 }
 .alternating-row__img {
     width: 51%;
+    max-height: 53.8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 .alternating-row__text {
     width: 49%;
@@ -1130,8 +1152,11 @@ ul.breadcrumb {
 }
 .slick-dots{
     bottom: auto!important;
+    transform: translateY(-50%);
 }
-
+.slick-dots li{
+    margin: 0!important;
+}
 #buy-service .row{
     margin-top: 4rem;
 }
@@ -1492,6 +1517,20 @@ ul.breadcrumb {
         right: auto;
         transform: translate(-50%, -50%);
     }
+    #home__feedback #name-error {
+        bottom: auto;
+        margin-top: -7.8rem;
+        margin-left: 0.5rem;
+        right: auto;
+        left: auto;
+    }
+    #home__feedback #phone-error {
+        bottom: auto;
+        margin-bottom: -7rem;
+        margin-left: 0.5rem;
+        right: auto;
+        left: auto;
+    }
     .feedback-title {
         text-align: center;
     }
@@ -1518,8 +1557,7 @@ ul.breadcrumb {
     }
     .horizontal-feedback-form input {
         margin-right: 0;
-        margin-bottom: 0.625rem;
-        padding: 0.8rem 1.4rem;
+        margin-bottom: 1.5rem;
     }
     .feedback-form__home {
         text-align: center;

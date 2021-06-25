@@ -100,9 +100,9 @@
             Масштабируем <br/>ваши возможности
           </h1>
         </div>
-        <form method="post" action="" class="flex flex-column feedback-form__home" enctype="multipart/form-data">
+        <form method="post" action="" class="flex flex-column feedback-form__home" id="home__feedback" enctype="multipart/form-data">
           <div class="horizontal-feedback-form content_center home_form">
-            <input type="text" class="nice_input" name="name" placeholder="Введите имя" required="">
+            <input type="text" class="nice_input" id="name" name="name" minlength="2" placeholder="Введите имя" required="">
             <input type="text" class="nice_input phone" name="phone" placeholder="Телефон" required="">
             <button type="submit" class="nice_btn btn_yellow">Оставить заявку</button>
           </div>
@@ -129,6 +129,10 @@
 
 <script>
   $( document ).ready(function() {
+    $("#home__feedback").validate();
+    
+    homeSlider();
+    
     if ($(window).width() <= 666){
       $('.clients__vslider').slick({
         arrows: false,

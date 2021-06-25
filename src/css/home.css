@@ -49,17 +49,21 @@
 .slider-nav {
     bottom: 1.0714rem;
     left: 12%;
+    width: 30rem;
 }
 .slider-arr {
     display: flex;
     bottom: 7rem;
     right: 11rem;
 }
+#home .slick-dots{
+    width: auto;
+}
 .home-main {
     position: absolute;
     width: 122rem;
-    background: url(../img/image_8.png);
     background-size: cover;
+    transition: all .5s ease-in-out;
     height: 100vh;
     right: 0;
 }
@@ -76,6 +80,16 @@
     display: flex;
     height: 100vh;
     z-index: 1;
+}
+#home .slick-dots button::before {
+    color:#fff;
+    opacity: .5;
+}
+.slick-dots .home-slick-active button::before {
+    opacity: 1!important;
+}
+.slick-dots li:hover button::before {
+    opacity: 1!important;
 }
 
 .home-main__feedback {
@@ -100,6 +114,7 @@
 }
 .home_form{
     margin-top: 3rem;
+    position: relative;
 }
 .home_form .nice_input{
     margin-right: 2rem;
