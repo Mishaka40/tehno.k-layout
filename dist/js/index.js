@@ -392,7 +392,7 @@ function textShortener (){
 }
 
 function homeSlider(){
-  var clicks=0;
+ /* var clicks=0;
   var dots_holder = $('.slider-nav');
   var bg_imgs = [
       '/img/image_8.png',
@@ -456,7 +456,21 @@ function homeSlider(){
   $('.sec-arrow-right').on('click', rightClick);
   $('.carousel-arrow-left').on('click', leftClick);
   $('.sec-arrow-left').on('click', leftClick);
-  $('.dot_btn_home').on('click', btnClick);
+  $('.dot_btn_home').on('click', btnClick);*/
+}
+
+function homeSlider(){
+  $('.home-main__slider').slick({
+    dots: true,
+    arrows: true,
+    appendArrows: $('.slider-arr'),
+    appendDots: $('.slider-nav'),
+    prevArrow: '<div class="btn_arr_left carousel-arrow-left"><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-3.49691e-07 7L8.25 0.0717961L8.25 13.9282L-3.49691e-07 7Z" fill="#ffffff"></path></svg></div>',
+    nextArrow: '<div class="btn_arr_right carousel-arrow-right"><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 7L0.75 13.9282L0.750001 0.0717965L9 7Z" fill="#ffffff"></path></svg></div>',
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
 }
 
 function servicesSlider(){
