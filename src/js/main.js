@@ -270,5 +270,29 @@ $( document ).ready(function() {
   if ($(window).width() <= 666){
     textShortener();
   }
-  $("#phone-form").validate();
+  jQuery.validator.addMethod("lettersonly", function(value, element) {
+    return this.optional(element) || /^[A-Za-zА-Яа-яЁё\s]+$/i.test(value);
+  }, "Вводите только буквы!"); 
+
+  $('form').each(function( index ) {
+    $(this).validate({
+      rules: {
+        name: { 
+          lettersonly:true,
+          minlength: 2,
+          maxlength: 40  
+        },
+        activity: {
+          lettersonly:true,
+          minlength: 2,
+          maxlength: 200
+        },
+        project_info: {
+          lettersonly:true,
+          minlength: 2,
+          maxlength: 200
+        }
+      }
+    });
+  });
 });

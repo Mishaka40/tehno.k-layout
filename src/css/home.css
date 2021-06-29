@@ -44,7 +44,7 @@
 .slider-arr,
 .slider-nav {
     position: absolute;
-    z-index: 4;
+    z-index: 3;
 }
 .slider-nav {
     bottom: 9rem;
@@ -115,8 +115,19 @@
 .home_form{
     margin-top: 3rem;
     position: relative;
+    justify-content: end;
 }
-.home_form .nice_input{
+.home_form .horizontal-feedback-form__input{
     margin-right: 2rem;
     opacity: .7;
+}
+.horizontal-feedback-form__input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 25rem;
+    position: relative;
+}
+.feedback-form__home .disclaimer{
+    margin-top:1rem;
 }

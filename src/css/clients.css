@@ -20,6 +20,7 @@
     overflow: hidden;
     height: max-content;
     width: 53%;
+    margin-left: 1rem;
     flex-shrink: 0;
 }
 .vslider__row {
@@ -32,8 +33,8 @@
     flex-direction: column;
 }
 .clients__vslider__slide {
-    width: 100%;
-    padding: 2rem 0;
+    width: calc(100% - 2rem);
+    margin: 2rem 1rem; 
 }
 .vslide__inner {
     display: flex;
