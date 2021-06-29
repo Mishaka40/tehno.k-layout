@@ -6,11 +6,13 @@
 #about .section_title {
     margin-top: 5rem;
 }
-.about__text {
-    text-align: center;
-    max-width: 120rem;
-    font-size: 1.6rem;
+.about__text{
     margin: 3rem auto;
+    max-width: 120rem;
+}
+.about__text *{
+    text-align: center;
+    font-size: 1.6rem;
 }
 .about__btn {
     margin-bottom: 5rem;

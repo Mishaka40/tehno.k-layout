@@ -26,16 +26,19 @@
     height: 6.25rem;
 }
 .block__text {
-    padding-left: 3rem;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.block__text-title {
-    font-size: 2rem;
+.block__text-title{
     margin-bottom: 2rem;
-    color: #e04a38;
 }
-.block__text-desc {
+.block__text-title *{
+    font-size: 2rem;
+    color: #e04a38;
+    font-weight: 600;
+}
+.block__text-desc *{
     font-size: 1.6rem;
 }

@@ -9,10 +9,10 @@
   <div class="content section-gap">
     <ul class="breadcrumb">
       <li><a href="index.html">Главная</a></li>
-      <li>Контакты</li>
+      <li><span>Контакты</span></li>
     </ul>
 
-    <div class="page-title-big">Контакты</div>
+    <div class="page-title-big"><h1>Контакты</h1></div>
     <div class="page-text">
       <span>
         Мы заботимся о каждой заявке, и ничего не упускаем из виду. Ответ на Вашу заявку будет от 10 минут до часа. При диалоге Вы получите консультацию по Вашему направлению - что и в какой последовательности стоит делать. Заполните все поля и Мы свяжемся с Вами.
@@ -101,7 +101,7 @@
             </span>
           </div>
           <div class="row">
-            <div class="flex contacts__social-block">
+            <div class="flex contacts__social-block" data-social-link="https://LinkedIn.com">
               <div class="contacts__social-img">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -118,11 +118,11 @@
               </div>
               <div class="block__text-desc flex flex-column content_center">
                 <span>
-                  LinkedIn
+                  <b>LinkedIn</b>
                 </span>
               </div>
             </div>
-            <div class="flex contacts__social-block">
+            <div class="flex contacts__social-block" data-social-link="https://LinkedIn.com">
               <div class="contacts__social-img">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -137,11 +137,11 @@
               </div>
               <div class="block__text-desc flex flex-column content_center">
                 <span>
-                  Telegram
+                  <b>Telegram</b>
                 </span>
               </div>
             </div>
-            <div class="flex contacts__social-block">
+            <div class="flex contacts__social-block" data-social-link="https://LinkedIn.com">
               <div class="contacts__social-img">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -156,11 +156,11 @@
               </div>
               <div class="block__text-desc flex flex-column content_center">
                 <span>
-                  Facebook
+                  <b>Facebook</b>
                 </span>
               </div>
             </div>
-            <div class="flex contacts__social-block">
+            <div class="flex contacts__social-block" data-social-link="https://LinkedIn.com">
               <div class="contacts__social-img">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -178,11 +178,11 @@
               </div>
               <div class="block__text-desc flex flex-column content_center">
                 <span>
-                  Behance
+                  <b>Behance</b>
                 </span>
               </div>
             </div>
-            <div class="flex contacts__social-block">
+            <div class="flex contacts__social-block" data-social-link="https://LinkedIn.com">
               <div class="contacts__social-img">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -197,11 +197,11 @@
               </div>
               <div class="block__text-desc flex flex-column content_center">
                 <span>
-                  VK.com
+                  <b>VK.com</b>
                 </span>
               </div>
             </div>
-            <div class="flex contacts__social-block">
+            <div class="flex contacts__social-block" data-social-link="https://LinkedIn.com">
               <div class="contacts__social-img">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -217,7 +217,7 @@
               </div>
               <div class="block__text-desc flex flex-column content_center">
                 <span>
-                  Skype
+                  <b>Skype</b>
                 </span>
               </div>
             </div>
@@ -235,8 +235,8 @@
   
             <div class="text disclaimer">
                 <span>
-                  Отправьте заполненный бриф нам на почту <b>dim_555@mail.ru</b>
-                  В скайп/месседжер - <b>+7 925 879-96-40</b>
+                  Отправьте заполненный бриф нам на почту <a href="mailto:dim_555@mail.ru"><b>dim_555@mail.ru</b></a>
+                  В скайп/месседжер - <a href="tel:+79258799640"><b>+7 925 879-96-40</b></a>
                 </span>
             </div>
           </div>
@@ -260,9 +260,9 @@
           </h2>
         </div>
         <div class="seo_block__desc">
-          <span>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-          </span>
+          </p>
         </div>
         <div class="seo_block__btn ">
           <a href="about.html" class="nice_btn btn_red">Читать больше о нас</a>
@@ -274,4 +274,11 @@
     </div>
   </div>
 </section>
+<script>
+  $( document ).ready(function() {
+    $('.contacts__social-block').on('click', function(){
+      document.location.href=$(this).data('social-link');
+    })
+  });
+</script>
 @@include('parts/footer.html')

@@ -47,8 +47,8 @@
     z-index: 4;
 }
 .slider-nav {
-    bottom: 1.0714rem;
-    left: 12%;
+    bottom: 9rem;
+    left: 24rem;
     width: 30rem;
 }
 .slider-arr {
@@ -61,7 +61,7 @@
 }
 .home-main {
     position: absolute;
-    width: 122rem;
+    width: 84.8%;
     background-size: cover;
     transition: all .5s ease-in-out;
     height: 100vh;

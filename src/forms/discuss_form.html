@@ -7,12 +7,12 @@
               Расскажем как сделать Ваш кредит выгоднее!
             </span>
     </div>
-    <div class="row">
+    <div class="row" id="discuss_form">
         <div class="contacts__form__wrap">
             <div class="contacts__form__inner">
                 <form id="submit-project" method="post" action="" enctype="multipart/form-data">
                     <div class="contacts__form__inputs">
-                        <input type="text" class="nice_input" name="name" placeholder="Введите имя" required />
+                        <input type="text" class="nice_input" name="name" id="name" placeholder="Введите имя" minlength="2" maxlength="40" required />
                     </div>
                     <div class="contacts__form__inputs">
                         <input type="text" class="nice_input phone" name="phone" placeholder="Телефон" required />
@@ -23,18 +23,14 @@
                     </div>
                     <input type="hidden" class="service-name" name="service" value="" />
                     <div class="contacts__form__inputs">
-                        <select name="activity" class="nice_input" required>
-                            <option value="">Сфера деятельности</option>
-                            <option value="сфера1">сфера1</option>
-                            <option value="сфера2">сфера2</option>
-                        </select>
+                        <input type="text" class="nice_input" name="activity" placeholder="Сфера деятельности" maxlength="200" required />
                     </div>
                 </form>
             </div>
         </div>
         <div class="contacts__form__wrap__textarea">
             <div class="contacts__form__inputs">
-                <textarea class="nice_input" name="project" form="submit-project" placeholder="Расскажите кратко о сути проекта" required ></textarea>
+                <textarea class="nice_input" name="project" form="submit-project" id="project_info" maxlength="200" placeholder="Расскажите кратко о сути проекта" required ></textarea>
             </div>
         </div>
     </div>
@@ -47,3 +43,6 @@
         </div>
     </div>
 </div>
+<script>
+$("#name").validate();
+</script>
